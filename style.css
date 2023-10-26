@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-titles: 4rem;
+  --fs-subtitles: 2.5rem;
+  --ff-poppins: "Poppins", sans-serif;
+  --bg-color: #e6ece2;
+  --bg-container: #dae6c2;
+  --bg-header: #a0af83;
+  --title-color: #435736;
+  --text-color: #2f312e;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-body);
+  margin: 0 auto;
+}
+
+#page {
+  width: 130rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hero-container {
+  background-color: var(--bg-container);
+}
+
+header {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+strong {
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+p {
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--bg-header);
+}
