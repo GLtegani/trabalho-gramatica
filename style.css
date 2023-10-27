@@ -1,3 +1,5 @@
+/* config */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,36 +9,18 @@
 :root {
   font-size: 62.5%;
   --fs-body: 1.6rem;
-  --fs-titles: 4rem;
-  --fs-subtitles: 2.5rem;
+  --fs-titles: 3.5rem;
+  --fs-subtitles: 3rem;
+  --fs-little-titles: 2.5rem;
+  --fs-text: 2rem;
   --ff-poppins: "Poppins", sans-serif;
   --bg-color: #e6ece2;
   --bg-container: #dae6c2;
   --bg-header: #a0af83;
+  --bg-border: #2f312e;
+  --bg-scd-border: #515c4b;
   --title-color: #435736;
   --text-color: #2f312e;
-}
-
-body {
-  background: var(--bg-color);
-  font-family: var(--ff-poppins);
-  font-size: var(--fs-body);
-  margin: 0 auto;
-}
-
-#page {
-  width: 130rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#hero-container {
-  background-color: var(--bg-container);
-}
-
-header {
-  text-align: left;
-  padding-left: 2rem;
 }
 
 strong {
@@ -46,8 +30,137 @@ strong {
 
 p {
   color: var(--text-color);
+  font-size: var(--fs-text);
+}
+
+.box-separation {
+  background-color: var(--bg-scd-border);
+}
+
+.box-separation .page-number {
+  color: white;
+  font-size: var(--fs-little-titles);
+}
+
+/* body */
+
+body {
+  background: var(--bg-color);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-body);
+  margin: 0 auto;
+}
+
+#page {
+  width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content-container {
+  background-color: var(--bg-container);
+}
+
+/* header */
+
+header {
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: var(--fs-little-titles);
 }
 
 header {
   background-color: var(--bg-header);
+}
+
+/* page one */
+
+.introduction {
+  margin: 3rem auto 0;
+  padding-bottom: 4rem;
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+.introduction h1 {
+  font-size: var(--fs-titles);
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.introduction span {
+  color: var(--title-color);
+}
+.introduction p {
+  font-size: var(--fs-subtitles);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.introduction h1,
+p {
+  text-align: left;
+  margin-left: 5.5rem;
+}
+
+.introduction img {
+  width: 70rem;
+  margin: 0 auto;
+}
+
+/* pages */
+
+.pages h2 {
+  margin-top: 5rem;
+}
+
+#page-one {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+#introduction-pg-one {
+  display: flex;
+}
+
+#introduction-pg-one p {
+  text-align: left;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+}
+
+#introduction-pg-one img {
+  width: 30rem;
+  height: 40rem;
+  margin: 0 5rem;
+}
+
+/* page one bio */
+
+#bio {
+  margin: 0 3rem 0 0;
+}
+
+ol {
+  letter-spacing: 1px;
+  line-height: 3.5rem;
+  list-style: none;
+}
+
+ol li {
+  margin: 5rem 0;
+}
+
+/* page two */
+
+#page-two {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+#summary-pg-two img {
+  width: 70rem;
+
+  margin: 0 5rem 3rem;
+}
+
+#summary-pg-two p {
+  margin: 0 4rem 3rem;
 }
