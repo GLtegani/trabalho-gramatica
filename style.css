@@ -52,7 +52,7 @@ body {
 }
 
 #page {
-  width: 100%;
+  width: 90rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -235,7 +235,16 @@ ol li {
 /* at rules */
 
 @media (min-width: 1000px) {
+  #page {
+    width: 100%;
+  }
+
+  #introduction-pg-one {
+    display: flex;
+  }
+
   #introduction-pg-one p {
+    text-align: left;
     line-height: 4.5rem;
     letter-spacing: 1px;
   }
