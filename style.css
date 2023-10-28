@@ -52,7 +52,7 @@ body {
 }
 
 #page {
-  width: 90rem;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -156,11 +156,92 @@ ol li {
 }
 
 #summary-pg-two img {
-  width: 70rem;
+  width: 60rem;
 
   margin: 0 5rem 3rem;
 }
 
 #summary-pg-two p {
   margin: 0 4rem 3rem;
+}
+
+/* page three */
+
+#page-three {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+#page-three img {
+  margin: 5rem 0;
+  width: 60rem;
+}
+
+/* page four */
+
+#page-four {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+.history-content p {
+  margin-bottom: 5rem;
+}
+
+/* page five */
+
+#page-five {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+/* page six  */
+
+#page-six {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+#page-six .history-content p {
+  margin-top: 5rem;
+}
+
+#page-six .closure p {
+  margin-bottom: 5rem;
+}
+
+/* page seven */
+
+#page-seven {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+/* page eight */
+
+#page-eight {
+  border-bottom: 4.5rem solid var(--bg-border);
+}
+
+.bibliography ol li {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.bibliography ol li a {
+  color: rgb(83, 77, 77);
+}
+
+.bibliography ol li a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+/* at rules */
+
+@media (min-width: 1000px) {
+  #introduction-pg-one p {
+    line-height: 4.5rem;
+    letter-spacing: 1px;
+  }
+
+  #introduction-pg-one img {
+    width: 30rem;
+    height: 35rem;
+  }
 }
