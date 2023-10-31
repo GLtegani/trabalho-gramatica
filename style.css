@@ -239,10 +239,6 @@ ol li {
     width: 100%;
   }
 
-  #introduction-pg-one {
-    display: flex;
-  }
-
   #introduction-pg-one p {
     text-align: left;
     line-height: 4.5rem;
